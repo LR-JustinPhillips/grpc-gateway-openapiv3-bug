@@ -14,9 +14,9 @@ photongogen:
 		--grpc-gateway_opt paths=source_relative \
 		--grpc-gateway_opt generate_unbound_methods=true \
 		$(foreach proto, $(manual_protos), \
-			--go_opt=M$(proto)="$(manual_package)/$(dir $(proto));device_managementv1"  \
-		 	--go-grpc_opt=M$(proto)="$(manual_package)/$(dir $(proto));device_managementv1"   \
-			--grpc-gateway_opt=M$(proto)="$(manual_package)/$(dir $(proto));device_managementv1"   \
-			--openapiv3_opt=M$(proto)="$(manual_package)/$(dir $(proto));device_managementv1"   \
+			--go_opt=M$(proto)="$(manual_package)"  \
+		 	--go-grpc_opt=M$(proto)="$(manual_package)"   \
+			--grpc-gateway_opt=M$(proto)="$(manual_package)"   \
+			--openapiv3_opt=M$(proto)="$(manual_package)"   \
 		) \
 		$(manual_protos)
