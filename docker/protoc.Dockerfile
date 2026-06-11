@@ -23,7 +23,7 @@ WORKDIR /grpc-gateway
 RUN go mod tidy
 RUN go install \
     github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway \
-    github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv3
+    github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
 
 WORKDIR /go
 
