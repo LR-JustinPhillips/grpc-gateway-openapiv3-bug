@@ -11,4 +11,6 @@ Two additional branches exist where the same proto definitions can be used to ge
 - `with-openapiv2`: Swapping all instances of openapiv3 for openapiv2 allows the openapi specs to be built, even when the proto definitions and build pipeline remain the same.
 - `with-buf`: Swapping a direct protoc call for buf allows the openapi specs to be built using the openapiv3 plugin.
 
+Additionally, the `simpler-proto` branch exists where an even simpler proto definition than this one also fails to generate.
+
 If this is not a direct problem with the plugin itself, it's difficult to tell what is failing because the error does not describe much about the problem.
