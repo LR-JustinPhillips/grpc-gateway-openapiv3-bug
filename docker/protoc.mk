@@ -1,7 +1,7 @@
 manual_gen_path := gen/go/api
 manual_openapi_path := gen/openapi/api
 manual_package := example.com/service_a/$(manual_gen_path)
-manual_protos := service_a_1.proto service_a_2.proto shared.proto
+manual_protos := service_a.proto
 
 photongogen:
 	mkdir -p $(manual_gen_path)

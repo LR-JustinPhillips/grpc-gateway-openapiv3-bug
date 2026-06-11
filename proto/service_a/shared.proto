@@ -1,6 +1,0 @@
-syntax = "proto3";
-package service.a.v1;
-
-message StringMessage {
-    string value = 1;
-}
