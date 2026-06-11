@@ -7,4 +7,4 @@ clean:
 
 gen-go:
 	@echo "building go protofiles"
-	@docker build -f ./docker/protoc.Dockerfile --target=artifact --output type=local,dest=$(CURDIR) .
+	@docker build -f ./buf/buf.go.Dockerfile --target=artifact --output type=local,dest=$(CURDIR) .
